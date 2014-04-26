@@ -1,0 +1,45 @@
+next steps:
+
+- clean data
+	if headline or body is empty, remove line
+		empty, or not a string, or < 10 chars
+
+
+- hand score 500 documents
+- compare model accuracy with headlines vs doc bodies
+
+
+
+
+#167 dupe headlines
+
+
+
+
+print page
+lead paragraph
+headline
+word_count	
+
+
+
+
+noticed correlation of NAN print pages and weirdly formatted headlines (death/paid notices)
+
+used dropna successfully
+
+
+headlines, chars > 13
+
+
+Friday's goals:
+	complete hand scoring, train algorithm
+	experiment with stop words
+	try boosting words
+
+Saturday's goals
+	k means
+	explore other data sets
+
+Sunday
+	gut check, practice presentation
