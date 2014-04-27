@@ -83,11 +83,11 @@ Freed Captive Is Reunited With His Family in Britain
 
 # lots of grey areas
 C.I.A. Takes On Expanded Role On Front Lines
-
-
-remove "Paid Notice"
 Rush Limbaugh Released From Hospital
 South Korea's Exports Surged Last Month - good for some, not others
+
+
+
 
 word cloud?
 
@@ -100,9 +100,10 @@ word cloud?
     X_train = vectorizer.fit_transform(data_train.data)
 
 
-RESULTS:
+RESULTS (mean accuracy):
 
-
+100% of data (748):
+GAUSS:
 (lead_paragraph only)
 0.908       0.89558233  0.89156627]
 
@@ -110,9 +111,40 @@ RESULTS:
 [ 0.732       0.78714859  0.74297189]
 
 [headline + paragraph]
+ 0.908       0.89156627  0.8875502 ]
+
+75% of data (561)
+0.88235294  0.88770053  0.88235294]
+
+50% of data (374):
+GAUSS:
+[0.848       0.824       0.85483871]
+
+25% of data(187):
+0.77777778  0.79032258  0.80645161]
 
 
 
+MULTINOMIAL
+100% of data:
+ [0.9         0.90361446  0.90361446]
 
 
 ANALYSIS:
+lead_paragraph is what matters
+multinomial slightly better than gauss
+
+alpha 0, or 1 did not make a difference
+
+#problems:
+"needle in a haystack"
+
+
+NEXT:
+
+
+add class priors?
+random forest
+add stemmer?
+crack open model to see most powerful stop_word, go word
+	need to crack open vectorizer 
