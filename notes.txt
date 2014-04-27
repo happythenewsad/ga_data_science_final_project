@@ -43,8 +43,13 @@ Saturday's goals
 
 
 	complete hand scoring, train algorithm
-		train with body, then headlines, then both
-	experiment with stop words, stemmer
+	- train with body (with stop words)
+		- add stemmer
+
+
+
+	- train with body, then headlines, then both
+
 	score negatives?
 	try boosting words
 
@@ -85,3 +90,29 @@ Rush Limbaugh Released From Hospital
 South Korea's Exports Surged Last Month - good for some, not others
 
 word cloud?
+
+
+
+
+
+  vectorizer = TfidfVectorizer(sublinear_tf=True, max_df=0.5,
+                                 stop_words='english')
+    X_train = vectorizer.fit_transform(data_train.data)
+
+
+RESULTS:
+
+
+(lead_paragraph only)
+0.908       0.89558233  0.89156627]
+
+(headline only)
+[ 0.732       0.78714859  0.74297189]
+
+[headline + paragraph]
+
+
+
+
+
+ANALYSIS:
