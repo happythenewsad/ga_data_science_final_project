@@ -124,11 +124,13 @@ GAUSS:
 0.77777778  0.79032258  0.80645161]
 
 
-
 MULTINOMIAL
 100% of data:
  [0.9         0.90361446  0.90361446]
 
+RANDOM FOREST:
+N=10
+0.87937743  0.8828125   0.87890625]
 
 ANALYSIS:
 lead_paragraph is what matters
@@ -138,13 +140,14 @@ alpha 0, or 1 did not make a difference
 
 #problems:
 "needle in a haystack"
-
+added 20 more positivies
+now ratio is 94 / 675
 
 NEXT:
 
 
-add class priors?
-random forest
+add class priors? no.
+
 add stemmer?
 crack open model to see most powerful stop_word, go word
 	need to crack open vectorizer 
