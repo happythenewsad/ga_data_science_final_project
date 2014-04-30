@@ -42,14 +42,3 @@ end
 File.open("2010_ny_1000_newest_clean.csv", "w+") do |io|
 	io << csv
 end
-
-
-
-# week in review
-# http://www.nytimes.com/2011/03/06/weekinreview/06happy.html?_r=0
-
-
-#what sections of nytimes have positive news/
-
-#us - boston marathon
-#http://www.nytimes.com/2014/04/22/us/boston-marathon.html?ref=us
