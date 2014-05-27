@@ -5,7 +5,7 @@ require 'csv'
 #GET DATA
 base_uri = "http://api.nytimes.com/svc/search/v2/articlesearch.json?"
 params = "sort=newest&begin_date=20100101&end_date=20120101"
-api_key = "&api-key=c8c13d539ec13f408d1eb01663347954:11:68488575"
+api_key = "&api-key=INSERTKEYHERE"
 page = "&page=1"
 
 docs = []
